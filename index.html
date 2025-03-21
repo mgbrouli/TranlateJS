@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversor Binario</title>
+    <style>
+        body{
+            background-color: rgb(141, 151, 160);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .centro{
+            width: 500px;
+            height: 400px;
+            border: 1px solid gray;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .resposta{
+            width: 80%;
+            height: 100px;
+            border: 1px dashed black;
+            background-color: whitesmoke;
+            overflow: scroll;
+            justify-content: start;
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centro">
+        <div class="radius">
+            <h1>Selecione a entrada de dados</h1>
+            <input type="radio" name="escolha" id="texto2" checked> Texto
+            <input type="radio" name="escolha" id="binario"> Binario
+            
+        </div><!--radius-->
+
+        <input type="text" name="texto" id="texto" placeholder="Digite um texto">
+        <input type="button" value="Converter" id="converter">
+        <input type="textArea" class="resposta" rows="6" cols="5" wrap="hard"></div><!--respostoa-->
+    </div><!--centro-->
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
