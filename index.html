@@ -27,11 +27,11 @@
         }
 
         .resposta{
-            width: 80%;
+            width: 50vh;
             height: 100px;
             border: 1px dashed black;
             background-color: whitesmoke;
-            overflow: scroll;
+            resize: none;
             justify-content: start;
             
             
@@ -50,10 +50,11 @@
 
         <input type="text" name="texto" id="texto" placeholder="Digite um texto">
         <input type="button" value="Converter" id="converter">
-        <input type="textArea" class="resposta" rows="6" cols="5" wrap="hard"></div><!--respostoa-->
+        
+        <textArea wrap="hard" class="resposta"></textArea>
     </div><!--centro-->
     
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
     
 </body>
 </html>
