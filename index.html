@@ -16,6 +16,7 @@
             width: 500px;
             height: 400px;
             border: 1px solid gray;
+            background-color: lightblue;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -24,11 +25,49 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+        
+        .centro h1{
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+            font-size: 35px;
         }
         .radius{
             display: flex;
             flex-direction: column;
             gap: 4px;
+            margin: 20px;
+        }
+
+        .label_input{
+            padding: 1px;
+            width: 100%;
+            height: 25px;
+            text-align: center;
+            margin: 10px;
+        }
+        .label_input #texto{
+            width: 60%;
+            height: 25px;
+            outline: aquamarine;
+            border: none;
+            border-bottom: 1px solid black;
+            border-bottom-left-radius: 10px;
+        }
+        .label_input #converter{
+            width: 30%;
+            height: 27px;
+            border: none;
+            border-bottom: 1px solid black;
+            border-top-right-radius: 10px;
+        }
+        .label_input #converter:hover{
+            background-color: rgb(102, 174, 241);
+            box-shadow: 2px 2px 3px greenyellow;
+            cursor: pointer;
         }
 
         .resposta{
@@ -40,8 +79,7 @@
             overflow-wrap: break-word;
             
             
-        }
-        
+        }      
     </style>
 </head>
 <body>
@@ -50,15 +88,15 @@
         <div class="radius">
             <h1>Selecione a entrada de dados</h1>
             <label for="opcao_radio"><input type="radio" name="escolha" id="texto2" checked> Binario -> Texto</label>
-            <label for="opcao_radio"><input type="radio" name="escolha" id="binario">Texto -> Binario </label>
-            <label for="opcao_radio"><input type="radio" name="escolha" id="hexadecimal">Texto -> HexaDecimal</label>
-            <label for="opcao_radio"><input type="radio" name="escolha" id="hex_to_text">HexaDecimal -> Texto</label>
+            <label for="opcao_radio"><input type="radio" name="escolha" id="binario"> Texto -> Binario </label>
+            <label for="opcao_radio"><input type="radio" name="escolha" id="hexadecimal"> Texto -> HexaDecimal</label>
+            <label for="opcao_radio"><input type="radio" name="escolha" id="hex_to_text"> HexaDecimal -> Texto</label>
             
         </div><!--radius-->
 
-        <input type="text" name="texto" id="texto" placeholder="Digite um texto">
-        <input type="button" value="Converter" id="converter">
-        <textarea class="resposta" disabled wrap="hard"></textarea><!--respostoa-->
+        <label class="label_input" for="texto"><input type="text" name="texto" id="texto" placeholder="Digite um texto">
+        <input type="button" value="Converter" id="converter"></label>
+        <textarea class="resposta" disabled readonly wrap="hard"></textarea><!--respostoa-->
     </div><!--centro-->
     
     <script src="script.js"></script>

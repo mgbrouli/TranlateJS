@@ -42,8 +42,7 @@ function textToHex(entrada){
 }
 
 function hexToTex(entrada){
-    return entrada
-    .split(' ').map(hex =>{
+    return entrada.split(' ').map(hex =>{
         const decimal = parseInt(hex, 16);
         return String.fromCharCode(decimal)
 
