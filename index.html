@@ -25,6 +25,11 @@
             justify-content: center;
             align-items: center;
         }
+        .radius{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
 
         .resposta{
             width: 400px;
@@ -36,6 +41,7 @@
             
             
         }
+        
     </style>
 </head>
 <body>
@@ -43,8 +49,10 @@
     <div class="centro">
         <div class="radius">
             <h1>Selecione a entrada de dados</h1>
-            <input type="radio" name="escolha" id="texto2" checked> Texto
-            <input type="radio" name="escolha" id="binario"> Binario
+            <label for="opcao_radio"><input type="radio" name="escolha" id="texto2" checked> Binario -> Texto</label>
+            <label for="opcao_radio"><input type="radio" name="escolha" id="binario">Texto -> Binario </label>
+            <label for="opcao_radio"><input type="radio" name="escolha" id="hexadecimal">Texto -> HexaDecimal</label>
+            <label for="opcao_radio"><input type="radio" name="escolha" id="hex_to_text">HexaDecimal -> Texto</label>
             
         </div><!--radius-->
 
