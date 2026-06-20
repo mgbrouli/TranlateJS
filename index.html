@@ -27,12 +27,12 @@
         }
 
         .resposta{
-            width: 80%;
-            height: 100px;
+            width: 400px;
+            height: 50%;
             border: 1px dashed black;
             background-color: whitesmoke;
-            overflow: scroll;
-            justify-content: start;
+            word-break: break-all;
+            overflow-wrap: break-word;
             
             
         }
@@ -50,7 +50,7 @@
 
         <input type="text" name="texto" id="texto" placeholder="Digite um texto">
         <input type="button" value="Converter" id="converter">
-        <input type="textArea" class="resposta" rows="6" cols="5" wrap="hard"></div><!--respostoa-->
+        <textarea class="resposta" disabled wrap="hard"></textarea><!--respostoa-->
     </div><!--centro-->
     
     <script src="script.js"></script>
